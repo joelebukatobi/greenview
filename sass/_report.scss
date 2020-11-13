@@ -1,0 +1,110 @@
+.report {
+  &__top {
+    & .badge {
+      &__report {
+        height: 20rem;
+        width: 20rem;
+      }
+    }
+
+    & .address {
+      & ul {
+        & li {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          font-size: 1.4rem;
+          padding-bottom: 0.8rem;
+          & svg {
+            height: 2.4rem;
+            width: 2.4rem;
+            margin-right: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__table {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__bg {
+      width: 80rem;
+      height: 80rem;
+      opacity: 0.1;
+      position: absolute;
+      z-index: -1;
+      top: 10rem;
+    }
+
+    &__header {
+      width: 100%;
+      & .heading-2 {
+        text-align: center;
+        margin-bottom: 3.2rem;
+      }
+
+      &__detail {
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    &__main {
+      width: 100%;
+      & table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      & table {
+        width: 100%;
+      }
+
+      & tr:nth-of-type(1) {
+        border: 1px solid $color-primary;
+        background-color: $color-primary;
+        & th {
+          padding: 0.8rem 0 0.8rem 1.6rem;
+          border: none;
+          text-align: left;
+          color: $color-white;
+          background-color: $color-primary;
+        }
+      }
+
+      & tr:nth-of-type(2) {
+        border-top: 0px solid transparent;
+        & td {
+          border-top: 0px solid transparent;
+        }
+      }
+
+      & td {
+        padding: 0.8rem 0 0.8rem 1.6rem;
+      }
+    }
+
+    &__footer {
+      margin-top: 4.8rem;
+      width: 100%;
+      & > * {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    &__image {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/*
+  Color Variables
+  ---------------
+*/
+/*
+  Font Variables
+  --------------
+*/
+/* 
+  Mixins 
+  ------
+*/
+/*
+  Mobile Responsiveness
+  ---------------------
+*/
+/*
+  Main
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input:link,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+input::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+button:link,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  background-color: transparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.heading-1 {
+  font-size: 5rem;
+}
+
+.heading-2 {
+  font-size: 3.7rem;
+}
+
+.heading-3 {
+  font-size: 2.8rem;
+}
+
+.heading-4 {
+  font-size: 2.1rem;
+}
+
+.heading-5 {
+  font-size: 1.4rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.report {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100rem;
+  height: 141.5rem;
+}
+.report__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.2rem 0;
+  padding: 0 10rem;
+}
+.report__table {
+  padding: 0 10rem;
+}
+
+.report__top .badge__report {
+  height: 20rem;
+  width: 20rem;
+}
+
+.report__top .address ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.4rem;
+  padding-bottom: 0.8rem;
+}
+.report__top .address ul li svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 1.6rem;
+}
+
+.report__table {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.report__table__bg {
+  width: 80rem;
+  height: 80rem;
+  opacity: 0.1;
+  position: absolute;
+  z-index: -1;
+  top: 10rem;
+}
+.report__table__header {
+  width: 100%;
+}
+.report__table__header .heading-2 {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.report__table__header__detail {
+  margin-bottom: 3.2rem;
+}
+.report__table__main {
+  width: 100%;
+}
+.report__table__main table,
+.report__table__main th,
+.report__table__main td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.report__table__main table {
+  width: 100%;
+}
+.report__table__main tr:nth-of-type(1) {
+  border: 1px solid #00dda8;
+  background-color: #00dda8;
+}
+.report__table__main tr:nth-of-type(1) th {
+  padding: 0.8rem 0 0.8rem 1.6rem;
+  border: none;
+  text-align: left;
+  color: #ffffff;
+  background-color: #00dda8;
+}
+.report__table__main tr:nth-of-type(2) {
+  border-top: 0px solid transparent;
+}
+.report__table__main tr:nth-of-type(2) td {
+  border-top: 0px solid transparent;
+}
+.report__table__main td {
+  padding: 0.8rem 0 0.8rem 1.6rem;
+}
+.report__table__footer {
+  margin-top: 4.8rem;
+  width: 100%;
+}
+.report__table__footer > * {
+  margin-bottom: 2.4rem;
+}
+
+.report__bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.report__bottom__image {
+  width: 100%;
+}

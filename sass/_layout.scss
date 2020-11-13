@@ -1,0 +1,19 @@
+.report {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100rem;
+  height: 141.5rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.2rem 0;
+    padding: 0 10rem;
+  }
+  &__table {
+    padding: 0 10rem;
+  }
+}
