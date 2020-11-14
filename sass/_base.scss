@@ -13,7 +13,12 @@ $color-grey: #757575;
   --------------
 */
 $font-primary: 'Poppins', sans-serif;
-$font-secondary: 'Amsterday';
+$font-secondary: 'Montserrat', sans-serif;
+
+@font-face {
+  font-family: 'Certificate';
+  src: url('../fonts/Certificate.ttf');
+}
 
 /* 
   Mixins 
